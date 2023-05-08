@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cars List</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        text-align: center;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #4CAF50;
+        color: white;
+        width: 25px;
+      }
+      button{
+        display: list-item;
+      }
+      #headerContainer {
+        display: flex;
+        justify-content: center;
+      }
+      #headerBox {
+        text-align: center;
+        background-color: #F5F5F5;
+        border: 1px solid #ddd;
+        padding: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="headerContainer">
+      <div id="headerBox">
+        <h1>Cars List</h1>
+        <table id="carsTable">
+          <thead>
+            <tr>
+              <th>Brand</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br>
+    <div>
+      <input type="text" id="brandInput">
+      <button onclick="addBrand()">Add</button>
+    </div>
+    <br>
+    <button onclick="pushBrand()">Push</button>
+    <button onclick="popBrand()">Pop</button>
+    <button onclick="shiftBrand()">Shift</button>
+    <button onclick="unshiftBrand()">Unshift</button>
+    <script src="script.js"></script>
+  </body>
+</html>
